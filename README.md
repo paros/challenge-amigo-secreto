@@ -7,10 +7,12 @@ La aplicación permite al usuario crear una lista personalizada de amigos y lueg
 
 
 ## Funcionalidades
-- Agregar nombres a una lista de amigos.
-- Validar que el campo no esté vacío
-- Mostrar la lista actualizada en pantalla.
-- Sortear un nombre aleatorio.
+- Agregar nombres a una lista.
+- Validar que los nombres no estén vacíos, no contengan números ni caracteres especiales.
+- Evitar duplicados.
+- Realizar el sorteo de manera aleatoria.
+- Reiniciar el juego cuando se desee.
+
 
 ## 📁 Estructura
 
@@ -22,6 +24,7 @@ La aplicación permite al usuario crear una lista personalizada de amigos y lueg
     │ ├── amigo-secreto.png
     │ └── play_circle_outline.png
     └── README.md    
+
 
 ## 🎮 Cómo usar
 
