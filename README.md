@@ -7,7 +7,7 @@ Aplicación web interactiva desarrollada como parte de un reto de programación,
 
 ## Funcionalidades
 - Agregar nombres a una lista de amigos.
-- Validar que el campo no esté vacío y evitar duplicados.
+- Validar que el campo no esté vacío
 - Mostrar la lista actualizada en pantalla.
 - Sortear un nombre aleatorio.
 
@@ -32,12 +32,13 @@ Aplicación web interactiva desarrollada como parte de un reto de programación,
 ### 2) Sortear
 - Haz clic en **Sortear amigo**
 
-### 3) Reiniciar
-- Haz clic en **Reiniciar**
-- Se pedirá confirmación antes de limpiar todo
+##Tecnologías utilizadas
+- HTML
+- CSS
+- JavaScript
 
 
 # Autor
 Patricia Aros
-GitHub: paros
-Email: aros.patricia@gmail.com
+- GitHub: paros
+- Email: aros.patricia@gmail.com
