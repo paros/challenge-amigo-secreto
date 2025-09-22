@@ -10,3 +10,6 @@ Aplicación web interactiva desarrollada como parte de un reto de programación,
 - Validar que el campo no esté vacío y evitar duplicados.
 - Mostrar la lista actualizada en pantalla.
 - Sortear un nombre aleatorio.
+
+# Autor
+Patricia Aros
