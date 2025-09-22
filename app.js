@@ -18,29 +18,34 @@ function agregarAmigo () {
   // Normalizar el texto ingresado
   let nombre = normalizarNombre(texto.value)
 
-  if (texto.value === '') {
+  // Validar que no esté vacío después de normalizar
+  if (nombre === '') {
     alert("Por favor escribe un nombre válido")
-
     return
   }
 
-  const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/
-  if (!soloLetras.test(texto.value)) {
+  // Validar solo letras y espacios (ya en mayúsculas y sin tildes)
+  const soloLetras = /^[A-ZÑ\s]+$/
+  if (!soloLetras.test(nombre)) {
     alert("Solo se permiten letras y espacios, sin números ni caracteres especiales")
     texto.value = ''
     return
   }
 
-  if (amigos.includes(texto.value)) {
-  alert("Ese nombre ya está en la lista")
-  texto.value = ''
-  return
-}
-  const li = document.createElement('li')
-  li.textContent = texto.value
+  // Evitar duplicados usando el nombre normalizado
+  if (amigos.includes(nombre)) {
+    alert("Ese nombre ya está en la lista")
+    texto.value = ''
+    return
+  }
 
+  // Agregar amigo a la lista visible (se muestra limpio pero en mayúsculas)
+  const li = document.createElement('li')
+  li.textContent = nombre
   contenedor.appendChild(li)
-  amigos.push(texto.value)
+
+  // Guardar el nombre normalizado
+  amigos.push(nombre)
   texto.value = ''
 }
 
@@ -52,19 +57,16 @@ function sortearAmigo () {
     return
   }
 
-  
   const ganador = Math.floor(Math.random() * numeroDeAmigos)
-
-  contenedor.textContent = "El amigo secreto es: " + amigos[ganador];
+  contenedor.textContent = "El amigo secreto es: " + amigos[ganador]
 }
 
 function reiniciarSorteo() {
-    amigos = [];
-    document.getElementById("listaAmigos").innerHTML = "";
-    document.getElementById("resultado").innerHTML = "";
-    document.getElementById("amigo").value = "";
+  amigos = []
+  document.getElementById("listaAmigos").innerHTML = ""
+  document.getElementById("resultado").innerHTML = ""
+  document.getElementById("amigo").value = ""
 }
-
 
 
 
