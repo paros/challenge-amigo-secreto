@@ -2,7 +2,8 @@
 ## Amigo Secreto 🎁
 Proyecto de programación:
 
-Aplicación web interactiva desarrollada como parte de un reto de programación, cuyo objetivo es fortalecer habilidades en JavaScript. La aplicación permite al usuario crear una lista personalizada de amigos y luego seleccionar uno al azar, ideal para juegos de Amigo Secreto.
+Aplicación web interactiva desarrollada como parte de un reto de programación, cuyo objetivo es fortalecer habilidades en JavaScript. 
+La aplicación permite al usuario crear una lista personalizada de amigos y luego seleccionar uno al azar, ideal para juegos de **Amigo Secreto**.
 
 
 ## Funcionalidades
@@ -33,13 +34,13 @@ Aplicación web interactiva desarrollada como parte de un reto de programación,
 - Haz clic en **Sortear amigo**
 
 
-## Tecnologías utilizadas
+## 📌 Tecnologías utilizadas
 - HTML
 - CSS
 - JavaScript
 
 
 # Autor
-Patricia Aros
+Patricia Aros en colaboracion con Alura Latam 
 - GitHub: paros
 - Email: aros.patricia@gmail.com
