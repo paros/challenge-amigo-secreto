@@ -30,3 +30,11 @@ function sortearAmigo () {
 
   contenedor.textContent = "El amigo secreto es: " + amigos[ganador];
 }
+
+function reiniciarSorteo() {
+    amigos = [];
+    document.getElementById("listaAmigos").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("amigo").value = "";
+}
+
