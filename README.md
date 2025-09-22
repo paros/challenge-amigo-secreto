@@ -33,6 +33,13 @@ La aplicación permite al usuario crear una lista personalizada de amigos y lueg
 ### 2) Sortear
 - Haz clic en **Sortear amigo**
 
+1. Escribe el nombre de un amigo en el campo de texto.
+2. Haz clic en **"Agregar"** para incluirlo en la lista.
+   - Solo se aceptan letras y espacios.
+   - No se permiten nombres repetidos.
+3. Una vez que tengas al menos **dos nombres**, presiona **"Sortear Amigo"** para elegir uno al azar.
+4. Si quieres empezar de nuevo, presiona **"Reiniciar"**.
+
 
 ## 📌 Tecnologías utilizadas
 - HTML
