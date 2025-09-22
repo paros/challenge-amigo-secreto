@@ -5,6 +5,8 @@ let amigos = []
 function agregarAmigo () {
   const texto = document.getElementById('amigo')
   const contenedor = document.getElementById('listaAmigos')
+
+  let nombre = texto.value.trim().replace(/\s+/g, ' ') 
   if (texto.value === '') {
     alert("Por favor escribe un nombre válido")
 
@@ -51,6 +53,7 @@ function reiniciarSorteo() {
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("amigo").value = "";
 }
+
 
 
 
