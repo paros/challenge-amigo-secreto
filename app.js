@@ -22,8 +22,8 @@ function agregarAmigo () {
 function sortearAmigo () {
   const numeroDeAmigos = amigos.length
   const contenedor = document.getElementById('resultado')
-  if (numeroDeAmigos < 1) {
-    alert('Debes colocar al menos un amigo')
+  if (numeroDeAmigos < 2) {
+    alert('Debes colocar al menos dos amigos')
   }
 
   const ganador = Math.floor(Math.random() * numeroDeAmigos)
@@ -37,4 +37,5 @@ function reiniciarSorteo() {
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("amigo").value = "";
 }
+
 
