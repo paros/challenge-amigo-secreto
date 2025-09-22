@@ -11,6 +11,13 @@ function agregarAmigo () {
     return
   }
 
+  const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/
+  if (!soloLetras.test(texto.value)) {
+    alert("Solo se permiten letras y espacios, sin números ni caracteres especiales")
+    texto.value = ''
+    return
+  }
+
   if (amigos.includes(texto.value)) {
   alert("Ese nombre ya está en la lista")
   texto.value = ''
@@ -44,6 +51,7 @@ function reiniciarSorteo() {
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("amigo").value = "";
 }
+
 
 
 
