@@ -39,8 +39,12 @@ La aplicación permite al usuario crear una lista personalizada de amigos y lueg
 - CSS
 - JavaScript
 
+## 📸 Capturas de pantalla
 
-# Autor
+### Vista inicial
+![Vista inicial](assets/captura-inicial.png)
+
+## Autor
 Patricia Aros en colaboracion con Alura Latam 
 - GitHub: paros
 - Email: aros.patricia@gmail.com
