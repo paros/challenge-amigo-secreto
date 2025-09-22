@@ -11,6 +11,11 @@ function agregarAmigo () {
     return
   }
 
+  if (amigos.includes(texto.value)) {
+  alert("Ese nombre ya está en la lista")
+  texto.value = ''
+  return
+}
   const li = document.createElement('li')
   li.textContent = texto.value
 
@@ -24,8 +29,10 @@ function sortearAmigo () {
   const contenedor = document.getElementById('resultado')
   if (numeroDeAmigos < 2) {
     alert('Debes colocar al menos dos amigos')
+    return
   }
 
+  
   const ganador = Math.floor(Math.random() * numeroDeAmigos)
 
   contenedor.textContent = "El amigo secreto es: " + amigos[ganador];
@@ -37,5 +44,6 @@ function reiniciarSorteo() {
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("amigo").value = "";
 }
+
 
 
