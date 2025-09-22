@@ -161,3 +161,30 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+.header-banner img {
+  max-width: 100%;   /* nunca más grande que su contenedor */
+  height: auto;      /* mantiene proporción */
+  display: block;    /* quita espacios raros */
+}
+
+/* ========================= */
+/* Layout responsivo (móvil) */
+/* ========================= */
+@media (max-width: 768px) {
+  .header-banner {
+    flex-direction: column;   /* apila título e imagen */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .main-title {
+    font-size: 32px;          /* título más pequeño en móvil */
+  }
+
+  .header-banner img {
+    width: 80%;               /* ancho relativo al contenedor */
+    max-width: 300px;         /* evita que sea demasiado grande */
+    margin-top: 20px;
+  }
+}
+
