@@ -27,12 +27,13 @@ Aplicación web interactiva desarrollada como parte de un reto de programación,
 ### 1) Agregar amigos
 - Escribe un nombre en el campo de texto
 - Presiona **Enter** o haz clic en **Añadir**
-- El nombre aparece en el listado
+- El nombre aparecerá en el listado
 
 ### 2) Sortear
 - Haz clic en **Sortear amigo**
 
-##Tecnologías utilizadas
+
+## Tecnologías utilizadas
 - HTML
 - CSS
 - JavaScript
