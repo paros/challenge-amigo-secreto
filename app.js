@@ -2,11 +2,22 @@
 
 let amigos = []
 
+function normalizarNombre(nombre) {
+  return nombre
+    .normalize("NFD")                     // separa letras de tildes
+    .replace(/[\u0300-\u036f]/g, "")      // elimina tildes
+    .trim()                               // elimina espacios inicio/fin
+    .replace(/\s+/g, " ")                 // convierte múltiples espacios en uno
+    .toUpperCase();                       // pasa todo a mayúsculas
+}
+
 function agregarAmigo () {
   const texto = document.getElementById('amigo')
   const contenedor = document.getElementById('listaAmigos')
 
-  let nombre = texto.value.trim().replace(/\s+/g, ' ') 
+  // Normalizar el texto ingresado
+  let nombre = normalizarNombre(texto.value)
+
   if (texto.value === '') {
     alert("Por favor escribe un nombre válido")
 
@@ -53,6 +64,7 @@ function reiniciarSorteo() {
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("amigo").value = "";
 }
+
 
 
 
